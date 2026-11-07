@@ -18,15 +18,17 @@ st.set_page_config(
     page_icon="🌸",
     layout="centered"
 )
-
 BASE = os.path.dirname(os.path.abspath(__file__))
 
+# Semua file berada di folder utama project
+OUT_DIR = BASE
+
 MODEL_PATH = os.path.join(
-    BASE, "final_flower_cnn_model.keras"
+    OUT_DIR, "final_flower_cnn_model.keras"
 )
 
 CLASS_PATH = os.path.join(
-    BASE, "class_names.json"
+    OUT_DIR, "class_names.json"
 )
 
 IMG_SIZE = (160, 160)
